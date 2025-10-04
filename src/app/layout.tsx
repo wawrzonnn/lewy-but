@@ -1,26 +1,43 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.scss'
-import './styles.scss'
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
 
-const inter = Inter({
-	subsets: ['latin'],
-	variable: '--font-inter',
-})
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
-	title: 'Formularz danych osobowych',
-	description: 'Aplikacja do wprowadzania i przeglądania danych osobowych',
-}
+  title: "Kalkulator Emerytalny ZUS",
+  description: "Sprawdź informacje o swojej przyszłej emeryturze",
+};
 
 export default function RootLayout({
-	children,
+  children,
 }: Readonly<{
-	children: React.ReactNode
+  children: React.ReactNode;
 }>) {
-	return (
-		<html lang='pl'>
-			<body className={inter.variable}>{children}</body>
-		</html>
-	)
+  return (
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <header className="fixed top-0 left-0 z-50 p-4">
+          <img
+            src="/logozus.svg"
+            alt="Logo ZUS"
+            className="h-12 w-auto"
+          />
+        </header>
+        <div className="pt-20">
+          {children}
+        </div>
+      </body>
+    </html>
+  );
 }
