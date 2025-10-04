@@ -1,0 +1,444 @@
+// ZUS Brand Colors
+$zus-black: rgb(0, 0, 0);
+$zus-green: rgb(0, 120, 52);
+$zus-white: rgb(255, 255, 255);
+$zus-green-dark: rgb(17, 120, 59);
+$zus-gray-light: rgb(239, 239, 239);
+
+// ZUS Typography
+$font-family-primary: 'Lato Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-bold: 'Lato Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-fallback: Arial;
+
+// Font Sizes
+$font-size-body: 14px;
+$font-size-h1: 12.25px;
+$font-size-h2: 19px;
+$font-size-h3: 17.0001px;
+$font-size-p: 23px;
+$font-size-a: 14px;
+$font-size-button: 14px;
+$font-size-input: 14px;
+$font-size-select: 14px;
+$font-size-nav: 14px;
+$font-size-header: 14px;
+$font-size-section: 14px;
+
+// Font Weights
+$font-weight-body: 400;
+$font-weight-h1: 500;
+$font-weight-h2: 400;
+$font-weight-h3: 400;
+$font-weight-p: 400;
+$font-weight-a: 400;
+$font-weight-button: 400;
+$font-weight-input: 400;
+$font-weight-select: 400;
+$font-weight-nav: 400;
+$font-weight-header: 400;
+$font-weight-section: 400;
+
+// Line Heights
+$line-height-h1: 14.7px;
+$line-height-h2: 27.9999px;
+$line-height-h3: 22.0001px;
+$line-height-p: 34.5px;
+$line-height-a: 21px;
+$line-height-button: 21px;
+$line-height-select: 19.6px;
+$line-height-header: 16.8px;
+$line-height-section: 16.8px;
+$line-height-nav: 16.8px;
+
+// Mixins for ZUS components
+@mixin zus-button {
+	color: $zus-black;
+	background-color: $zus-gray-light;
+	font-family: $font-family-primary;
+	font-size: $font-size-button;
+	font-weight: $font-weight-button;
+	line-height: $line-height-button;
+	padding: 1px 6px;
+	margin: 0px;
+	border: 2px outset $zus-black;
+	border-radius: 0px;
+	box-shadow: none;
+	text-transform: none;
+}
+
+@mixin zus-input {
+	color: $zus-black;
+	background-color: $zus-white;
+	font-family: $font-family-primary;
+	font-size: $font-size-input;
+	font-weight: $font-weight-input;
+	line-height: normal;
+	padding: 0px;
+	margin: 0px;
+	border: 0px none $zus-black;
+	border-radius: 0px;
+	box-shadow: none;
+	text-transform: none;
+}
+
+@mixin zus-select {
+	color: $zus-black;
+	background-color: rgba(0, 0, 0, 0);
+	font-family: $font-family-fallback;
+	font-size: $font-size-select;
+	font-weight: $font-weight-select;
+	line-height: $line-height-select;
+	padding: 0px;
+	margin: 0px;
+	border: 0px none $zus-black;
+	border-radius: 3px;
+	box-shadow: none;
+	text-transform: none;
+}
+
+@mixin zus-h1 {
+	color: $zus-black;
+	background-color: rgba(0, 0, 0, 0);
+	font-family: $font-family-primary;
+	font-size: $font-size-h1;
+	font-weight: $font-weight-h1;
+	line-height: $line-height-h1;
+	padding: 0px;
+	margin: -1px;
+	border: 0px none $zus-black;
+	border-radius: 0px;
+	box-shadow: none;
+	text-transform: none;
+}
+
+@mixin zus-h2 {
+	color: $zus-black;
+	background-color: rgba(0, 0, 0, 0);
+	font-family: $font-family-bold;
+	font-size: $font-size-h2;
+	font-weight: $font-weight-h2;
+	line-height: $line-height-h2;
+	padding: 19.9999px 0px 14.9999px;
+	margin: 0px;
+	border: 0px none $zus-black;
+	border-radius: 0px;
+	box-shadow: none;
+	text-transform: none;
+}
+
+@mixin zus-h3 {
+	color: $zus-black;
+	background-color: rgba(0, 0, 0, 0);
+	font-family: $font-family-bold;
+	font-size: $font-size-h3;
+	font-weight: $font-weight-h3;
+	line-height: $line-height-h3;
+	padding: 0px;
+	margin: 0px;
+	border: 0px none $zus-black;
+	border-radius: 0px;
+	box-shadow: none;
+	text-transform: none;
+}
+
+@mixin zus-p {
+	color: $zus-white;
+	background-color: rgba(0, 0, 0, 0);
+	font-family: $font-family-bold;
+	font-size: $font-size-p;
+	font-weight: $font-weight-p;
+	line-height: $line-height-p;
+	padding: 0px;
+	margin: 0px;
+	border: 0px none $zus-white;
+	border-radius: 0px;
+	box-shadow: none;
+	text-transform: none;
+}
+
+@mixin zus-link {
+	color: $zus-green-dark;
+	background-color: rgba(0, 0, 0, 0);
+	font-family: $font-family-primary;
+	font-size: $font-size-a;
+	font-weight: $font-weight-a;
+	line-height: $line-height-a;
+	padding: 0px;
+	margin: 15px 0px 0px;
+	border: 0px none $zus-green-dark;
+	border-radius: 0px;
+	box-shadow: none;
+	text-transform: none;
+}
+
+@mixin zus-header {
+	color: $zus-black;
+	background-color: rgba(0, 0, 0, 0);
+	font-family: $font-family-primary;
+	font-size: $font-size-header;
+	font-weight: $font-weight-header;
+	line-height: $line-height-header;
+	padding: 17.9999px 0px 35px;
+	margin: 0px 20px 20px;
+	border-radius: 0px;
+	box-shadow: none;
+	text-transform: none;
+}
+
+@mixin zus-section {
+	color: $zus-black;
+	background-color: rgba(0, 0, 0, 0);
+	font-family: $font-family-primary;
+	font-size: $font-size-section;
+	font-weight: $font-weight-section;
+	line-height: $line-height-section;
+	padding: 0px;
+	margin: 0px;
+	border: 0px none $zus-black;
+	border-radius: 0px;
+	box-shadow: none;
+	text-transform: none;
+}
+
+@mixin zus-nav {
+	color: $zus-black;
+	background-color: rgba(0, 0, 0, 0);
+	font-family: $font-family-primary;
+	font-size: $font-size-nav;
+	font-weight: $font-weight-nav;
+	line-height: $line-height-nav;
+	padding: 0px;
+	margin: 0px;
+	border: 0px none $zus-black;
+	border-radius: 0px;
+	box-shadow: none;
+	text-transform: none;
+}
+
+// Bootstrap-like btn class
+@mixin zus-btn {
+	background-color: transparent;
+	border: 1px solid transparent;
+	border-radius: 0.25rem;
+	color: #212529;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	padding: 0.375rem 0.75rem;
+	text-align: center;
+	transition:
+		color 0.15s ease-in-out,
+		background-color 0.15s ease-in-out,
+		border-color 0.15s ease-in-out,
+		box-shadow 0.15s ease-in-out;
+	user-select: none;
+	vertical-align: middle;
+}
+
+// Form styles
+@mixin zus-form-horizontal {
+	> .form-group {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+}
+
+@mixin zus-form-no-gutters {
+	&.container-no-gutters {
+		> .form-group {
+			margin-left: 0;
+			margin-right: 0;
+
+			> .col,
+			> [class*='col-'] {
+				padding-right: 0;
+				padding-left: 0;
+			}
+		}
+	}
+}
+
+// Menu styles
+@mixin zus-menu {
+	position: absolute;
+	width: auto;
+
+	&-content {
+		background: #fff;
+		list-style: none;
+		min-width: 150px;
+
+		li {
+			margin: 0;
+			padding: 0;
+
+			&.first {
+				border-top-width: 0;
+			}
+		}
+	}
+}
+
+// Select menu styles
+@mixin zus-selectmenu {
+	padding: 0;
+	margin: -4px 0 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+
+	.ui-menu {
+		overflow: auto;
+		max-height: 308px;
+		list-style: none;
+		padding: 0;
+		overflow-x: hidden;
+		margin: 0;
+	}
+}
+
+// Utility classes
+.zus-section-margin {
+	margin-bottom: 40px;
+}
+
+// IE compatibility
+.ie8 .ui-selectmenu-menu,
+.ie7 .ui-selectmenu-menu {
+	border: 1px solid #d0d0d0;
+}
+
+// Date/Time inputs
+input[type='date'],
+input[type='time'],
+input[type='datetime-local'],
+input[type='month'] {
+	-webkit-appearance: listbox;
+}
+
+// Button focus styles
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner {
+	border-style: none;
+}
+
+// Number input spinners
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+	height: auto;
+}
+
+// File upload button
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	font: inherit;
+}
+
+// Button appearance
+[type='button'] {
+	cursor: pointer;
+	-webkit-appearance: button;
+}
+
+// Box sizing
+*::after {
+	box-sizing: border-box;
+}
+
+// Main element
+main {
+	display: block;
+}
+
+// Heading margins
+h4,
+h5,
+h6 {
+	margin-bottom: 0.5rem;
+	margin-top: 0;
+}
+
+// Menu list border radius
+body > .lfr-menu-list ul {
+	border-radius: 4px;
+}
+
+// Collapse icon button
+button.collapse-icon {
+	padding-right: 2.28125rem;
+
+	.c-inner {
+		margin-right: -2.28125rem;
+	}
+}
+
+// Apply ZUS styles to elements
+button {
+	@include zus-button;
+}
+
+input {
+	@include zus-input;
+}
+
+select {
+	@include zus-select;
+}
+
+h1 {
+	@include zus-h1;
+}
+
+h2 {
+	@include zus-h2;
+}
+
+h3 {
+	@include zus-h3;
+}
+
+p {
+	@include zus-p;
+}
+
+a {
+	@include zus-link;
+}
+
+header {
+	@include zus-header;
+}
+
+section {
+	@include zus-section;
+}
+
+nav {
+	@include zus-nav;
+}
+
+.btn {
+	@include zus-btn;
+}
+
+.form-horizontal {
+	@include zus-form-horizontal;
+	@include zus-form-no-gutters;
+}
+
+.menu {
+	@include zus-menu;
+}
+
+.ui-selectmenu-menu {
+	@include zus-selectmenu;
+}
+
+.zus .b-row .b-section {
+	margin-bottom: 40px;
+}
